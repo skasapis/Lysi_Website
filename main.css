@@ -1,0 +1,114 @@
+/*
+body{
+    background: white;
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+}header{
+    background: green;
+    color: red;
+}
+.sect1{
+    background: blue;
+    padding: 150px;
+}
+.sect1 div{
+    background: blueviolet;
+    padding: 0s;
+}
+.sect2{
+    background: purple;
+    margin: 0;
+    display: flex;
+}
+.sect2div1{
+    background: #234;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+}
+.sect2div2{
+    background: #734;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+}
+.sect3{
+    background: orange;
+    padding: 150px
+}
+.sect4{
+    background: pink;
+    padding: 150px
+}
+.sect5{
+    background: red;
+    padding: 150px
+}
+footer{
+    background: gray;
+}
+}
+h1{
+    display: inline-block;
+    margin: 0;
+}
+*/
+
+/* BEGIN HEADER */
+
+.header_list {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  }
+  
+ .header_list li {
+    float: right;
+  }
+  
+  .header_list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 20px 0px 0px;
+  }
+  
+  .header_list li a:hover {
+    color: red;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  /* END HEADER */
+
+
+/* CSS */
+.vidContain {
+    width:100%; height:200px;
+    position:relative;
+    display:inline-block;
+    margin: 0px 0px 0px 0px;
+}
+.vid {
+    position: absolute; 
+    top: 0; left:0;
+    width: 100%; height: 100%; 
+    z-index: -1;
+    padding: 0px 0px 0px 0px;
+}    
+
+  
+  
