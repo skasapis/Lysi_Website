@@ -432,7 +432,7 @@ nav div ul{
   }
   
   .left-half {
-	background-image: url('student.png');
+	background-image: url('pictures/student.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
@@ -441,7 +441,7 @@ nav div ul{
   }
   
   .right-half {
-	background-image: url('tutor.png');
+	background-image: url('pictures/tutor.png');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
@@ -536,9 +536,9 @@ nav div ul{
   /* Footer */
 
 	#footer {
-		padding: 0 0 0 0;
-		margin: 
-		background: #25a2c3;
+		padding: 300px 0 0 0;
+		margin: 500px 0 0 0;
+		background-color: #25a2c3; 
 		text-align: center;
 		color: #c8e7f0;
 	}
