@@ -1,0 +1,61 @@
+body{
+    background:transparent;
+    margin: 0;
+}
+
+div .list-left{
+    background: #eee;
+    width: 20%;
+    height: 100%;
+    top: 60px;
+    position: fixed;
+    display: inline-block;
+    border-top-right-radius: 20px;
+}
+
+.vertical-menu {
+    width: 100%; /* Set a width if you like */
+}
+  
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 25px;
+}
+  
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+  
+.vertical-menu a.active {
+    background-color: #4ED37B; /* Add a green color to the "active/current" link */
+    color: white;
+    border-top-right-radius: 20px;
+}
+
+div .content-right{
+    background: transparent;
+    width: 80%;
+    left: 20%;
+    position: relative;
+    display: inline-block;
+}
+
+div .content-right div{
+    margin: 5% 5% 0 5%;
+}
+
+.content-right h1, .content-right h2, .content-right h3, .content-right ul{
+    color: rgb(66, 66, 66);
+}
+
+h1{
+    border-bottom: 2px solid #4ED37B;
+}
+
+h3{
+    font-weight: 100;
+}

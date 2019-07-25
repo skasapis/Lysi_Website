@@ -9,10 +9,12 @@ body{
 }
 
 #login-box{
+    z-index: 3;
     position: relative;
     margin: 5% auto;
-    height: 400px; 
-    width: 600px;
+    margin-top: 2%;
+    height: 500px; 
+    width: 750px;
     background: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -23,8 +25,8 @@ body{
     left: 0;
     box-sizing: border-box;
     padding: 40px;
-    width: 300px;
-    height: 400px;
+    width: 375px;
+    height: 500px;
 }
 
 .right-box{
@@ -33,23 +35,28 @@ body{
     right: 0;
     box-sizing: border-box;
     padding: 40px;
-    width: 300px;
-    height: 400px;
-    background-color: aquamarine;
+    width: 375px;
+    height: 500px;
+    background-color: rgb(235, 235, 235);
 }
 
 h1{
-    margin: 0 0 20px 0;
-    font-weight:300;
-    font-size: 28px;
+    margin: 0 0 30px 0;
+    font-weight:500;
+    font-size: 30px;
+    color: #4ED37B;
+}
+h1.Education{
+    margin-bottom: 40px;
+    margin-left: 15px;
 }
 
 input[type="text"],input[type="password"]{
     display: block;
     box-sizing: border-box;
-    margin-bottom: 20px;
-    padding: 4px;
-    width: 220px;
+    margin-bottom: 28px;
+    padding: 8px;
+    width: 273px;
     height: 32px;
     border: none;
     outline: none;
@@ -60,7 +67,14 @@ input[type="text"],input[type="password"]{
     transition: 0.2s ease;
 }
 
+input[class="firstname"],input[class="lastname"]{
+    display: inline-block;
+    width: 135px;
+    border-bottom: 1px solid #aaa;
+}
+
 input[type="submit"]{
+    margin-top: 10px;
     margin-bottom: 28px;
     width: 120px;
     height: 32px;
@@ -75,6 +89,11 @@ input[type="submit"]{
     cursor: pointer;
 }
 
+input[type="submit"]:hover,input[type="submit"]:hover{
+    background: rgb(49, 88, 62);
+    transition: 0.2s ease;
+}
+
 select{
     position: relative;
     font-family: sans-serif;
@@ -84,8 +103,156 @@ select{
     padding: 4px;
     width: 220px;
     height: 32px;
+    left: 17px;
+    border: 6px solid transparent;
+    border-color: transparent transparent transparent transparent;
+    background-color: white;
 }
 
-input[type="checkbox"]{
-    
+h2{
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(37, 37, 37);
+    padding-left: 17px;
+}
+
+/* Customize the label (the container) */
+.container {
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight: 400px;
+    font-size: 17px;
+    color: rgb(37, 37, 37);
+    left: 17px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    padding-top: 3px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 20%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #4ED37B;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #4ED37B;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+div.image{
+    position: absolute;
+    content: url(pictures/icons/LysiIcon.png);
+    top: 220px;
+    left: 345px;
+    height: 60px;
+}
+
+h3{
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 8;
+    color: rgb(80, 80, 80);
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.backbuttondiv{
+    z-index: 2;
+    position: fixed;
+    left: 1%;
+    /* bring your own prefixes */
+    transform: translate(-0%, -100%);
+}
+
+.backbutton{
+    background-color: white; /* Green */
+    border: none;
+    color: #4CAF50;
+    padding: 8px 12px 8px 12px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.backbutton a{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    color: rgb(80, 80, 80);
+}
+
+/* NAVBAR */
+
+nav{
+    margin-bottom: 0;
+}
+
+nav div{
+    font-size: 25px;
+}
+
+nav div ul{
+    font-weight: 1000;
+    margin-left: 65%;
+}
+
+nav div ul li a{
+    color: white;
 }

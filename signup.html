@@ -2,21 +2,56 @@
 <html>
 <head>
     <title>Lysi Sign Up</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="Lysi_signup.css">
 </head>
 
 <body>
+
+        <nav class="navbar navbar-expand-lg my-nav">
+                <img src="pictures/LysiLogoGreen.png" width="120" height="100%">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#stutu">Features<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="information.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="integrity.html">Integrity</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="integrity.html">Log in</a>
+                    </li>
+                  </ul>
+                </div>
+        </nav>
+
     <div id="login-box">
         <div class="left-box">
             <h1>Sign Up</h1>
+            <input class="firstname" type="text" name="FirstName" placeholder="First Name">
+            <input class="lastname" type="text" name="LastName" placeholder="Last Name">
             <input type="text" name="Username" placeholder="Username">
             <input type="text" name="email" placeholder="student@umich.edu">
-            <input type="password" name="password" placeholder="password">
-            <input type="password" name="password2" placeholder="Retype password">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password2" placeholder="Confirm Password">
             <input type="submit" name="Signup-button" value="Sign Up">
         </div>
         <div class="right-box">
-            <h1>Education</h1>
+            <h1 class="Education">Education</h1>
+            <h2>University</h2>
+            <select name="Major">
+                <option value="UM">University of Michigan</option>
+                <option value="MSU">Michigan State University</option>
+                <option value="EMU">Eastern Michigan University</option>
+            </select>
+            <h2>Field</h2>
             <select name="Major">
                 <option value="Engineering">Engineering</option>
                 <option value="Science">Science</option>
@@ -24,6 +59,7 @@
                 <option value="Business">Business</option>
                 <option value="Arts">Arts</option>
             </select>
+            <h2>Year</h2>
             <select name="Year">
                 <option value="Freshman">Freshman</option>
                 <option value="Sophomore">Sophomore</option>
@@ -32,8 +68,15 @@
                 <option value="GraduateStudent">Graduate Student</option>
                 <option value="Alumn">Alumn</option>
             </select>
-            <input type="checkbox" name="tutoring-interest" value="tutor"> Interested in tutoring<br>
+            <label class="container">I want to be a Lysi Tutor
+                <input type="checkbox" name="tutoring-interest" value="tutor">
+                <span class="checkmark"></span>
+            </label>
         </div>
+        <div class="image"></div>
+    </div>
+    <div>
+        <h3>Powered by Lysi Inc. &#169;</h3>
     </div>
 </body>
 </html>
