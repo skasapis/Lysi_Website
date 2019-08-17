@@ -40,13 +40,13 @@ body{
 }
 
 .mobile_h h1{
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: 100;
 }
 
 .mobile_h h2{
     padding: 4vh;
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-weight: 100;
 }
 
@@ -60,12 +60,13 @@ body{
 
 .downloadnow h1{
     text-align: center;
+    font-size: 3vh;
 }
 
 .img1{
-    margin: 5% 100% 5% 0%;
+    margin: 3% 100% 3% 0%;
 }
 
 .img2{
-    margin: 5% 0 5% 0;
+    margin: 3% 0 3% 0;
 }
