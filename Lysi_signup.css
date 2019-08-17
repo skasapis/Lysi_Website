@@ -256,3 +256,11 @@ nav div ul{
 nav div ul li a{
     color: white;
 }
+
+.navbar-nav{
+	/* background: #FFCB05; */
+	position: absolute;
+	height: 50px;
+	width: 460px;
+	right: 1px;
+}

@@ -1,0 +1,71 @@
+.video-header{
+    visibility: hidden;
+    display: none;
+}
+.section2{
+    visibility: hidden;
+    display: none;
+}
+.section3{
+    visibility: hidden;
+    display: none;
+}
+.navbar{
+    visibility: hidden;
+    display: none;
+}
+body{
+    background: #4ED37B;
+}
+#mobilediv{
+    /* background: blue; */
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    height: 70vh;
+    width: 70vw;
+    transform: translate(-50%, -50%);
+}
+
+.mobile_h{
+    text-align: center;
+    font-family: "HelveticaNeue-Light";
+    /* background: red; */
+    position: relative;
+    top: 10%;
+    left: 50%;
+    /* height: 10vh;
+    width: 50vw; */
+    transform: translate(-50%, -50%);
+}
+
+.mobile_h h1{
+    font-size: 3vh;
+    font-weight: 100;
+}
+
+.mobile_h h2{
+    padding: 4vh;
+    font-size: 2vh;
+    font-weight: 100;
+}
+
+#mobilediv img{
+    position: relative;
+    transform: translate(-50%, -50%);
+    /* height: 20vh; */
+    left: 50%;
+    top: 5vh;
+}
+
+.downloadnow h1{
+    text-align: center;
+}
+
+.img1{
+    margin: 5% 100% 5% 0%;
+}
+
+.img2{
+    margin: 5% 0 5% 0;
+}

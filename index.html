@@ -3,9 +3,11 @@
 <title>Lysi</title>
 <head>
 <link rel="icon" href="pictures/icons/LysiIcon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
-<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
-<link rel="stylesheet" href="Lysi_main.css">
+<link rel="stylesheet" media="screen and (min-width: 960px) and (min-height:500px)" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+<link rel="stylesheet" media="screen and (min-width: 960px) and (min-height:500px)" href="Lysi_main.css">
+<link rel="stylesheet" media="screen and (max-width: 960px), screen and (max-height:500px)" href="Lysi_main_mobile.css">
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <!-- <link rel="stylesheet" href="w3css-master/w3.css">
 <link rel="stylesheet" href="w3css-master/w3blacktheme.css">
@@ -14,6 +16,21 @@
 </head>
 
 <body>
+
+<!-- Mobile -->
+<!-- CHECK SIZE PROBLEM -->
+<div id="mobilediv">
+  <img src="pictures/LysiLogoGreen.png" height="35%" >
+  <div class="mobile_h">
+    <h1>From students, for students.</h1>
+    <h2>Introducing the first sharing economy tutoring app</h2>
+  </div>
+  <div class="downloadnow">
+    <h1>Download demo now:</h1>
+    <a href="www.google.com"><img class="img1" src="pictures/appstorebadge.png" height="60"></a>
+    <a href="www.google.com"><img class="img2" src="pictures/googleplaybadge.png" height="90"></a>
+  </div>
+</div>
 
 <!-- NAVIGATION BAR -->
 
@@ -56,38 +73,63 @@
 	</div>
 </div>
 
-<!-- One -->
-<section id="one" class="wrapper">
-    <div class="inner flex flex-3">
-      <div class="flex-item left">
-        <div>
-          <h3>Magna ultricies</h3>
+<div class="section2">
+  <div class="section2left">
+      <div class="s2top">
+          <h3>From students, for students</h3>
           <p>Morbi in sem quis dui plalorem ipsum<br />euismod in, pharetra sed ultricies</p>
-        </div>
-        <div>
-          <h3>Ipsum adipiscing lorem</h3>
+      </div>
+      <div class="s2bottom">    
+          <h3>One tap face to face help</h3>
           <p>Tristique yonve cursus jam nulla quam<br /> loreipsu gravida adipiscing lorem</p>
-        </div>
       </div>
-      <div class="flex-item image fit round">
-        <img src="pictures/phone.png" alt="" />
-      </div>
-      <div class="flex-item right">
-        <div>
-          <h3>Tempus nullam</h3>
+  </div>
+  <div class="section2middle"></div>
+  <div class="section2right">
+      <div class="s2top2">
+          <h3>Tutor and get tutored</h3>
           <p>Sed adipiscing ornare risus<br /> blandit sit et amet, sagittis magna.</p>
-        </div>
-        <div>
-          <h3>Suscipit nibh dolore</h3>
-          <p>Pellentesque egestas sem.<br /> orper feugiat lorem.</p>
-        </div>
       </div>
-    </div>
-  </section>
+      <div class="s2bottom2">
+          <h3>Instant employment</h3>
+          <p>Pellentesque egestas sem.<br /> orper feugiat lorem.</p>
+      </div>
+  </div>
+</div>
+
+<div class="section3">
+        <div class="left-half">
+            <article id="stutu">
+              <!-- <h1>Student</h1> -->
+              <ul>
+                <li class="headingstudent">Student</li>
+                <li>Snap picture of problem</li>
+                <li>Upload on Lysi App</li>
+                <li>Set time due and price</li>
+                <li>Get solutions and help</li>
+              </ul>
+            </article>
+        </div>
+        <div class="right-half">
+            <article>
+              <!-- <h1>Tutor</h1> -->
+              <ul>
+                  <li class="headingstudent">Tutor</li>
+                  <li>Get job notification</li>
+                  <li>View problem and time</li>
+                  <li>Accept priced offer</li>
+                  <li>Solve and get payed</li>
+                </ul>
+            </article>
+        </div>
+</div>
+
+<!-- OLD OLD OLD OLD OLD OLD OLD OLD OLD OLD -->
+
 
 <!-- STUDENT TUTOR SECTION -->
 
-<section class="section section-a">
+<!-- <section class="section section-a">
     <div class="container">
         <div class="left-half">
             <article id="stutu">
@@ -112,10 +154,10 @@
             </article>
           </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
-  <footer id="footer">
+  <!-- <footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -158,7 +200,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
